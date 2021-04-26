@@ -5,8 +5,20 @@
 // 12 + 14 + 16 = 42
 // 42 / 3 = 14
 
-const average = () => {};
+const average = (...agv) => {
+    let averageOf = 0;
+    for (let i = 0; i < agv.length; i++) {
+       
+      
 
+       averageOf += agv[i];
+    
+      
+       
+    }
+    return averageOf / agv.length ;
+     
+};
 console.log(average(0)); // -> 0
 console.log(average(1, 2)); // -> 1.5
 console.log(average(1, 3, 6, 10)); // -> 5
